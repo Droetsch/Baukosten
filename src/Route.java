@@ -186,6 +186,11 @@ public class Route {
                 ziel = new Position(zielPosX, zielPosY, curFeldkosten);
 
                 /*
+                Blockweise wie Daniel erklärte.
+                Von S bis Z nur n Zeilen ansehen.
+                Günstigsten Weg herausfinden bis zur Zeile darunter.
+                Checken ob der direkte Weg zur Spalte günstiger ist oder von Start aus laufen.
+                Dann Fehler finden und optimieren.
                 1 1 1 1 1 1 1 1 1 1 1 1 1
                 9 S 9 9 9 9 9 9 9 5 9 9 9
                 9 9 9 9 9 9 9 9 9 5 9 9 9
